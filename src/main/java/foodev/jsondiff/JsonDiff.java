@@ -133,7 +133,7 @@ public class JsonDiff {
 				}
 				JzonArray array = (JzonArray) partialInstructions;
 				JzonElement applyTo;
-				if (key.equals(MOD)) {
+				if (MOD.equals(key)) {
 					applyTo = origEl;
 				} else if (origEl.isJsonArray()) {
 					int index = Integer.parseInt(key.substring(1));
